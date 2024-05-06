@@ -8,13 +8,14 @@ html {
 
 body {
     margin: 0;
-    background-color: #fde8d4;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
-h1 {
-    font-size: 2rem;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde8d4;
 }
 
 article {
@@ -25,6 +26,10 @@ article {
     margin: 50px 0;
     padding: 25px;
     border-radius: 20px;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 .space-divider {
@@ -40,7 +45,8 @@ h1+p {
     margin-bottom: 30px;
 }
 
-img, aside {
+img,
+aside {
     border-radius: 10px;
 }
 
@@ -48,11 +54,13 @@ img, aside {
     font-weight: 700;
 }
 
-h2, ol li::marker, td {
+h2,
+ol li::marker,
+td {
     color: rgb(136, 34, 34);
 }
 
-li:not(li:last-child){
+li:not(li:last-child) {
     margin-bottom: 10px;
 }
 
@@ -67,7 +75,7 @@ aside {
 }
 
 h3 {
-    color:#db61fd;
+    color: #db61fd;
 }
 
 td {
@@ -76,7 +84,7 @@ td {
 }
 
 @media (max-width: 440px) {
-    body {
+    main {
         display: block;
     }
 
@@ -89,10 +97,14 @@ td {
     }
 
     img {
-        border-radius: 0;   
+        border-radius: 0;
     }
 
-    h1, h1+p, section, aside, div.attribution {
+    h1,
+    h1+p,
+    section,
+    aside,
+    div.attribution {
         padding: 0 20px;
     }
 }
